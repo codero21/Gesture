@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     // MARK: IBActions
     
     @IBAction func onGestureDetected(_ sender: Any) {
+        gestureType.text = "Tap Gesture detected"
     }
     
 
