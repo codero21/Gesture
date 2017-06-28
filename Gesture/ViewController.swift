@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var gestureType: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
