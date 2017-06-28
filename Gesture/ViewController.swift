@@ -11,7 +11,15 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    // MARK: IBOutlets
+ 
     @IBOutlet weak var gestureType: UILabel!
+    
+    
+    // MARK: IBActions
+    
+    @IBAction func onGestureDetected(_ sender: Any) {
+    }
     
 
     override func viewDidLoad() {

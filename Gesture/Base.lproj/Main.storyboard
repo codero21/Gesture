@@ -32,17 +32,26 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="10E-2o-TxZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Fm3-AU-WfU"/>
                             <constraint firstItem="10E-2o-TxZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="SUb-uU-6NJ"/>
                             <constraint firstAttribute="trailing" secondItem="10E-2o-TxZ" secondAttribute="trailing" constant="20" id="kMO-zC-Pco"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="MPQ-I4-kWK" appends="YES" id="J9k-rT-Cub"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="gestureType" destination="10E-2o-TxZ" id="tsK-cu-7BE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="MPQ-I4-kWK">
+                    <connections>
+                        <action selector="onGestureDetected:" destination="BYZ-38-t0r" id="yBN-G3-Tur"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
